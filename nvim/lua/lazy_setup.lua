@@ -11,6 +11,10 @@ require("lazy").setup({
       update_notifications = true, -- Enable/disable notification about running `:Lazy update` twice to update pinned plugins
     },
   },
+  {
+    "andrewferrier/wrapping.nvim",
+    config = function() require("wrapping").setup() end,
+  },
   { import = "community" },
   { import = "plugins" },
 } --[[@as LazySpec]], {
